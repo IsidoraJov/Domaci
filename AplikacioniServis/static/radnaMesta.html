@@ -1,0 +1,62 @@
+<head>
+    <title>Istorija polaganja</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../radnaMesta.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body onload="init()">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                
+                <li >
+                    <a   href="/home">Zaposleni</a>
+                    
+                </li>
+                <li >
+                    <a  href="/radnoMesto">Radna mesta</a>
+                    
+                </li>
+                <li>
+                    <a  href="/admin/kurs">Kursevi</a>
+                   
+                </li>
+                <li>
+                    <a  href="/admin/istorijaPolaganja">Istorija polaganja kurseva</a>
+                    
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a><span class="glyphicon glyphicon-log-in" name="logout" id="logout"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Edit</th>
+            <th scope="col">Naziv</th>
+            <th scope="col">Opis radnog mesta</th>
+            <th scope="col">Delete</th>
+            
+          </tr>
+        </thead>
+        <tbody id="tabela">
+         
+        </tbody>
+      </table>
+      <button type="button" id="btn" class="btn btn-default">Dodaj radno mesto</button>
+</body>
+
+</html>
